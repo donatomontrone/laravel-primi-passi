@@ -12,7 +12,7 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="https://cdn.iconscout.com/icon/free/png-256/laravel-226015.png" alt="Bootstrap" width="50" height="50">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,8 +20,8 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                            <a class="nav-link" href="/welcome">Welcome</a>
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                            <a class="nav-link" href="{{ route('welcome') }}">Welcome</a>
                         </div>
                     </div>
                 </div>
